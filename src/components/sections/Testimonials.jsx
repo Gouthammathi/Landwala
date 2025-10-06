@@ -28,9 +28,11 @@ function Testimonials() {
                 Lacus vestibulum ultricies mi risus, duis non, volutpat nullam non. Magna congue nisi maecenas elit aliquet eu sed consectetur.
               </p>
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-gradient-to-br from-gray-50 to-gray-100 rounded-full flex items-center justify-center text-gray-500 font-medium border-2 border-dashed border-gray-300">
-                  HJ
-                </div>
+                <img
+                  src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=96&h=96&fit=crop&crop=faces"
+                  alt="Hellen Jummy"
+                  className="w-12 h-12 rounded-full object-cover"
+                />
                 <div>
                   <div className="font-bold text-blue-900">Hellen Jummy</div>
                   <div className="text-sm text-gray-500">Financial Counselor</div>
@@ -42,9 +44,11 @@ function Testimonials() {
                 Odio rhoncus ornare ut quam. Molestie vel duis quis scelerisque ut id. In tortor turpis viverra sagittis ultrices nisi.
               </p>
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-gradient-to-br from-gray-50 to-gray-100 rounded-full flex items-center justify-center text-gray-500 font-medium border-2 border-dashed border-gray-300">
-                  RE
-                </div>
+                <img
+                  src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=96&h=96&fit=crop&crop=faces"
+                  alt="Ralph Edwards"
+                  className="w-12 h-12 rounded-full object-cover"
+                />
                 <div>
                   <div className="font-bold text-blue-900">Ralph Edwards</div>
                   <div className="text-sm text-gray-500">Math Teacher</div>
@@ -56,9 +60,11 @@ function Testimonials() {
                 Sagittis nunc egestas leo et malesua urna risus. Morbi proin et cras aliquar Diam tellus, amet, hac imperdiet.
               </p>
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-gradient-to-br from-gray-50 to-gray-100 rounded-full flex items-center justify-center text-gray-500 font-medium border-2 border-dashed border-gray-300">
-                  HJ
-                </div>
+                <img
+                  src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?w=96&h=96&fit=crop&crop=faces"
+                  alt="Hellena John"
+                  className="w-12 h-12 rounded-full object-cover"
+                />
                 <div>
                   <div className="font-bold text-blue-900">Hellena John</div>
                   <div className="text-sm text-gray-500">Psychology Student</div>

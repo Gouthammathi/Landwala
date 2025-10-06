@@ -1,6 +1,7 @@
 import React from 'react'
+import Vector14 from '../../assets/Vector 14.svg'
 import resort from '../../assets/resort.png'
-
+import chines from '../../assets/chinese-city 1.png'
 function Hero() {
   return (
     <section className="bg-gradient-to-r from-blue-200 via-blue-50 to-white min-h-screen flex items-center px-6 sm:px-8">
@@ -8,16 +9,14 @@ function Hero() {
         <div className='grid'>
           <div className="relative">
             <h1 className="text-blue-900 mb-6 leading-tight" style={{fontFamily: 'Poppins, sans-serif', fontWeight: '800', fontSize: '48px'}}>
-              <span className="relative">
-                Helping you find
-                {/* <div className="absolute -bottom-2 left-0 right-0 h-2 bg-orange-500 transform -rotate-1" style={{
-                  clipPath: 'polygon(0% 0%, 15% 30%, 30% 0%, 45% 40%, 60% 0%, 75% 35%, 90% 0%, 100% 25%, 100% 100%, 0% 100%)'
-                }}></div> */}
+              <span className="relative inline-block">
+                <span className="relative z-10">Helping you find</span>
+                <img src={Vector14} alt="" aria-hidden="true" className="absolute -bottom-3 md:-bottom-4 left-0 w-40 md:w-52 z-0" />
               </span>
               <br />
               the property of
               <br />
-              your <span className="text-orange-500">dreams.</span>
+              your <span className="text-[#EF9E41]">dreams.</span>
             </h1>
             </div>
             <div>
@@ -34,7 +33,7 @@ function Hero() {
               <div className=" top-4 -right-4 lg:w-[34rem] h-64 sm:h-72 lg:h-80 rounded-3xl overflow-hidden shadow-2xl z-0">
                 <div className="w-full h-full bg-white flex items-center justify-center text-gray-500 font-medium rounded-3xl">
                 <img 
-                  src={resort} 
+                  src={chines} 
                   alt="Resort Properties" 
                   className="w-full h-full object-cover rounded-3xl"
                 />

@@ -1,5 +1,8 @@
 import React from 'react'
 import bg from '../../assets/bg.png'
+import services1 from '../../assets/services1.png'
+import services2 from '../../assets/services2.png'
+import services3 from '../../assets/services3.png'
 
 function Services() {
   return (
@@ -16,25 +19,25 @@ function Services() {
             {/* Three overlapping vertical photo cards arranged diagonally */}
             <div className="flex relative h-full ">
               {/* Leftmost Card (Foreground) - Woman with glasses */}
-              <div className="absolute top-24 sm:top-28 left-0 ml-4 sm:ml-8 w-28 sm:w-32 md:w-36 h-64 sm:h-72 md:h-80 rounded-2xl overflow-hidden shadow-lg z-30 border-amber-50 border-4">
+              <div className="absolute top-24 sm:top-28 left-0 ml-4 sm:ml-8 w-28 sm:w-32 md:w-36 h-64 sm:h-72 md:h-80 rounded-2xl overflow-hidden shadow-lg z-30">
                 <img 
-                  src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=200&h=300&fit=crop&crop=center" 
+                  src={services1} 
                   alt="Team Member 1"
                   className="w-full h-full object-cover"
                 />
               </div>
               {/* Middle Card - Team meeting around laptop */}
-              <div className="absolute top-6 sm:top-8 left-6 sm:left-8 ml-24 sm:ml-32 md:ml-40 w-28 sm:w-32 md:w-36 h-64 sm:h-72 md:h-80  rounded-2xl overflow-hidden shadow-lg z-20 border-amber-50 border-4">
+              <div className="absolute top-6 sm:top-8 left-6 sm:left-8 ml-24 sm:ml-32 md:ml-40 w-28 sm:w-32 md:w-36 h-64 sm:h-72 md:h-80  rounded-2xl overflow-hidden shadow-lg z-20">
                 <img 
-                  src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=200&h=300&fit=crop&crop=center" 
+                  src={services2} 
                   alt="Team Meeting"
                   className="w-full h-full object-cover"
                 />
               </div>
               {/* Rightmost Card - Woman with laptop */}
-              <div className="absolute top-24 sm:top-28 left-10 sm:left-16 ml-56 sm:ml-64 md:ml-72 w-28 sm:w-32 md:w-36 h-64 sm:h-72 md:h-80 rounded-2xl overflow-hidden shadow-lg z-10 border-amber-50 border-4">
+              <div className="absolute top-24 sm:top-28 left-10 sm:left-16 ml-56 sm:ml-64 md:ml-72 w-28 sm:w-32 md:w-36 h-64 sm:h-72 md:h-80 rounded-2xl overflow-hidden shadow-lg z-10">
                 <img 
-                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&h=300&fit=crop&crop=face" 
+                  src={services3} 
                   alt="Team Member 2"
                   className="w-full h-full object-cover"
                 />
