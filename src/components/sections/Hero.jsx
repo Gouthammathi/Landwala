@@ -30,7 +30,7 @@ function Hero() {
           <div className="relative pt-6 sm:pt-10">
             <div className="relative h-[22rem] sm:h-96 lg:h-[500px]">
               {/* Background Image - Urban Properties (Top, Larger) */}
-              <div className=" top-4 -right-4 lg:w-[34rem] h-64 sm:h-72 lg:h-80 rounded-3xl overflow-hidden shadow-2xl z-0">
+              <div className=" top-0 -right-4 lg:w-[34rem] h-64 sm:h-72 lg:h-80 rounded-3xl overflow-hidden shadow-2xl z-0 border-4 border-white">
                 <div className="w-full h-full bg-white flex items-center justify-center text-gray-500 font-medium rounded-3xl">
                 <img 
                   src={chines} 
@@ -40,7 +40,7 @@ function Hero() {
                 </div>
               </div>
               {/* Foreground Image - Resort Properties (Bottom, Smaller) */}
-              <div className=" absolute bottom-6 sm:bottom-10 -left-24 sm:-left-32 w-60 sm:w-72 lg:w-80 h-48 sm:h-56 lg:h-64 rounded-3xl overflow-hidden shadow-2xl z-10">
+              <div className=" absolute bottom-6 sm:bottom-10 -left-24 sm:-left-32 w-60 sm:w-72 lg:w-80 h-48 sm:h-56 lg:h-64 rounded-3xl overflow-hidden shadow-2xl z-10 border-4 border-white">
                 <img 
                   src={resort} 
                   alt="Resort Properties" 

@@ -56,10 +56,7 @@ function Registered() {
           <div className="relative">
             <h2 className="text-4xl lg:text-5xl font-bold text-blue-900" style={{fontFamily: 'Poppins, sans-serif'}}>
               <span className="relative">
-                <span className="absolute -top-2 -left-6 w-3 h-3 bg-orange-500">
-                  <div className="absolute top-1/2 left-0 right-0 h-0.5 bg-orange-500 transform -translate-y-1/2"></div>
-                  <div className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-orange-500 transform -translate-x-1/2"></div>
-                </span>
+               
                 Registered Properties
               </span>
             </h2>
