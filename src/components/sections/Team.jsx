@@ -34,7 +34,7 @@ function Team() {
           <img
             src={pers}
             alt="Team Lead"
-            className="absolute bottom-0 right-0 md:right-4 lg:right-8 w-auto h-[420px] md:h-[520px] lg:h-[640px] object-contain drop-shadow-2xl z-10"
+            className="absolute bottom-0 right-0 md:right-4 lg:right-8 w-auto h-[420px] md:h-[520px] lg:h-[640px] object-contain drop-shadow-2xl z-10 transform translate-y-3 sm:translate-y-0"
           />
         </div>
       </div>
