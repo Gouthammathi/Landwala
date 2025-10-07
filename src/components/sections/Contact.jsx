@@ -3,6 +3,7 @@ import Blob from '../../assets/Blob.png'
 import UserThumb from '../../assets/User Thumb.png'
 import ContactPicture from '../../assets/Picture.png'
 import Vector14 from '../../assets/Vector 14.svg'
+import Icons from '../../assets/Icons.svg'
 
 function Contact() {
   return (
@@ -19,7 +20,7 @@ function Contact() {
           <p className="text-gray-500 mb-12 leading-relaxed">
             Mauris consequat, cursus pharetra et, habitasse rhoncus quis odio ac. In et dolor eu donec maecenas nulla. Cum sed orci, sit pellentesque
           </p>
-          <form className="w-full max-w-xl" onSubmit={(e) => e.preventDefault()}>
+          <form className="w-full max-w-xl relative" onSubmit={(e) => e.preventDefault()}>
             <label className="sr-only" htmlFor="contact-email">Email</label>
             <div className="relative">
               {/* Pill container */}
@@ -38,6 +39,13 @@ function Contact() {
                 Connect with us
               </button>
             </div>
+            {/* Decorative icons under the form */}
+            <img 
+              src={Icons} 
+              alt="" 
+              aria-hidden="true" 
+              className="absolute -bottom-130 -left-10 w-24 md:w-32 lg:w-40 opacity-100"
+            />
           </form>
         </div>
         <div className="relative">
@@ -48,6 +56,13 @@ function Contact() {
               alt="" 
               aria-hidden="true" 
               className="absolute inset-0 m-auto w-[320px] md:w-[420px] lg:w-[500px] h-auto object-contain pointer-events-none select-none z-0"
+            />
+            {/* Decorative icons under the blob */}
+            <img 
+              src={Icons} 
+              alt="" 
+              aria-hidden="true" 
+              className="absolute bottom-8 right-25 w-24 md:w-32 lg:w-40 opacity-100 z-0"
             />
             <div className="relative h-96 z-10">
               <div className="absolute top-0 left-0 w-96 h-80 rounded-2xl overflow-hidden">

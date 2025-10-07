@@ -25,10 +25,10 @@ function Header() {
     }
   }
 
-  const handleNavClick = (e, sectionId) => {
+  const handleLogoClick = (e) => {
     e.preventDefault()
-    scrollToSection(sectionId)
-    setActiveSection(sectionId)
+    scrollToSection('home')
+    setActiveSection('home')
   }
 
   useEffect(() => {
@@ -54,7 +54,10 @@ function Header() {
   return (
     <header className="bg-gradient-to-r from-blue-200 via-blue-50 to-white w-full px-8 py-4 flex justify-between items-center sticky top-0 z-50">
       {/* Logo Section */}
-      <div className="flex items-center gap-5">
+      <button 
+        onClick={handleLogoClick}
+        className="flex items-center gap-5 hover:opacity-80 transition-opacity duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 rounded"
+      >
         <img 
           src={logo} 
           alt="LandWala Logo" 
@@ -64,7 +67,7 @@ function Header() {
           <span className="text-blue-900">Land</span>
           <span className="text-orange-500">Wala</span>
         </div>
-      </div>
+      </button>
       
       {/* Navigation */}
       <nav className="hidden md:flex gap-8">

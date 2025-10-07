@@ -4,13 +4,9 @@ function Footer() {
   return (
     <footer className="bg-gradient-to-br from-white to-blue-50 relative">
       {/* Placeholder for footer image */}
-      <div className="w-full h-36 bg-gradient-to-br from-blue-50 to-white flex items-center justify-center border-t-4 border-orange-500 relative">
+      {/* <div className="w-full h-36 bg-gradient-to-br from-blue-50 to-white flex items-center justify-center border-t-4 border-orange-500 relative"> */}
         <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-orange-500 to-orange-400"></div>
-        {/* <div className="text-center text-gray-500">
-          <span className="block text-lg font-semibold mb-2">Footer Image Placeholder</span>
-          <p className="text-sm m-0">Add your footer image here</p>
-        </div> */}
-      </div>
+      
       
       <div className="py-12 px-8">
         <div className="max-w-6xl mx-auto flex flex-col lg:flex-row justify-between items-start mb-12">

@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Icons from '../../assets/Icons.svg'
 
 const faqs = [
   {
@@ -37,17 +38,17 @@ function FAQ() {
           <h2 className="text-4xl lg:text-5xl font-bold text-blue-900 mb-4">
             Frequently Asked <span className="text-orange-500">Questions</span>
           </h2>
+          {/* Decorative icons under the heading */}
+          <img 
+            src={Icons} 
+            alt="" 
+            aria-hidden="true" 
+            className="absolute -bottom-60 -right-10 w-32 md:w-40 lg:w-48 opacity-100"
+          />
           <p className="text-lg text-gray-500 leading-relaxed">
             Trusted by customers in 100+ countries. Find quick answers below.
           </p>
-          <div className="relative mt-8">
-            <div className="absolute -top-2 -left-2 w-2 h-2 bg-orange-500 rounded-full"></div>
-            <div className="absolute top-4 left-6 w-3 h-3 bg-orange-500" style={{clipPath: 'polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)'}}></div>
-            <div className="absolute -bottom-2 left-12 w-3 h-3 bg-orange-500">
-              <div className="absolute top-1/2 left-0 right-0 h-0.5 bg-orange-500 transform -translate-y-1/2"></div>
-              <div className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-orange-500 transform -translate-x-1/2"></div>
-            </div>
-          </div>
+          
         </div>
         <div>
           {faqs.map((item, index) => {

@@ -1,4 +1,5 @@
 import React from 'react'
+import Icons from '../../assets/Icons.svg'
 
 function WhyLandwala() {
   return (
@@ -8,13 +9,14 @@ function WhyLandwala() {
           <h2 className="text-4xl lg:text-5xl font-bold text-blue-900 mb-8">
             Why <span className="text-orange-500">Landwala?</span>
           </h2>
-          <div className="relative">
-            <div className="absolute -top-2 -left-2 w-3 h-3 bg-orange-500">
-              <div className="absolute top-1/2 left-0 right-0 h-0.5 bg-orange-500 transform -translate-y-1/2"></div>
-              <div className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-orange-500 transform -translate-x-1/2"></div>
-            </div>
-            <div className="absolute top-4 left-6 w-2 h-2 bg-orange-500 rounded-full"></div>
-          </div>
+          {/* Decorative icons under the heading */}
+          <img 
+            src={Icons} 
+            alt="" 
+            aria-hidden="true" 
+            className="absolute -bottom-100 -left-20 w-32 md:w-40 lg:w-48 opacity-100"
+          />
+         
         </div>
         <div>
           <p className="text-lg text-gray-500 mb-12 leading-relaxed">

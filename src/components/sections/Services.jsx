@@ -3,10 +3,18 @@ import bg from '../../assets/bg.png'
 import services1 from '../../assets/services1.png'
 import services2 from '../../assets/services2.png'
 import services3 from '../../assets/services3.png'
+import Icons from '../../assets/Icons.svg'
 
 function Services() {
   return (
-    <section className="pt-12 pb-10 px-8 bg-gradient-to-br from-gray-50 to-gray-100 overflow-hidden">
+    <section className="pt-12 pb-10 px-8 bg-gradient-to-br from-gray-50 to-gray-100 overflow-hidden relative">
+      {/* Decorative icons in right corner */}
+      <img 
+        src={Icons} 
+        alt="" 
+        aria-hidden="true" 
+        className="absolute top-20 right-0 w-24 md:w-32 lg:w-40 opacity-100 transform scale-x-[-1]"
+      />
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
         {/* Orange Images */}
         <div className="relative">
