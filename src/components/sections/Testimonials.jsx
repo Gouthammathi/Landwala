@@ -21,9 +21,9 @@ function Testimonials() {
        }}>
       
         <div className="max-w-6xl mx-auto relative z-10">
-      
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-            <div className="bg-white text-gray-800 p-8 rounded-2xl shadow-2xl">
+
+          <div className="flex md:grid md:grid-cols-3 gap-6 md:gap-8 overflow-x-auto md:overflow-visible snap-x snap-mandatory pb-2 [-ms-overflow-style:none] [scrollbar-width:none]">
+            <div className="bg-white text-gray-800 p-8 rounded-2xl shadow-2xl min-w-[85%] md:min-w-0 snap-center">
               <p className="mb-8 leading-relaxed text-gray-500">
                 Lacus vestibulum ultricies mi risus, duis non, volutpat nullam non. Magna congue nisi maecenas elit aliquet eu sed consectetur.
               </p>
@@ -39,7 +39,7 @@ function Testimonials() {
                 </div>
               </div>
             </div>
-            <div className="bg-white text-gray-800 p-8 rounded-2xl shadow-2xl">
+            <div className="bg-white text-gray-800 p-8 rounded-2xl shadow-2xl min-w-[85%] md:min-w-0 snap-center">
               <p className="mb-8 leading-relaxed text-gray-500">
                 Odio rhoncus ornare ut quam. Molestie vel duis quis scelerisque ut id. In tortor turpis viverra sagittis ultrices nisi.
               </p>
@@ -55,7 +55,7 @@ function Testimonials() {
                 </div>
               </div>
             </div>
-            <div className="bg-white text-gray-800 p-8 rounded-2xl shadow-2xl">
+            <div className="bg-white text-gray-800 p-8 rounded-2xl shadow-2xl min-w-[85%] md:min-w-0 snap-center">
               <p className="mb-8 leading-relaxed text-gray-500">
                 Sagittis nunc egestas leo et malesua urna risus. Morbi proin et cras aliquar Diam tellus, amet, hac imperdiet.
               </p>
