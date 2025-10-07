@@ -1,7 +1,8 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 function Registered() {
   const [currentIndex, setCurrentIndex] = useState(0)
+  const [itemsPerView, setItemsPerView] = useState(3)
   
   const properties = [
     {
@@ -36,16 +37,40 @@ function Registered() {
     }
   ]
 
+  useEffect(() => {
+    const updateItemsPerView = () => {
+      const width = window.innerWidth
+      if (width < 768) {
+        setItemsPerView(1)
+      } else if (width < 1024) {
+        setItemsPerView(2)
+      } else {
+        setItemsPerView(3)
+      }
+    }
+    updateItemsPerView()
+    window.addEventListener('resize', updateItemsPerView)
+    return () => window.removeEventListener('resize', updateItemsPerView)
+  }, [])
+
+  useEffect(() => {
+    // Ensure current index is valid when itemsPerView changes
+    const maxIndex = Math.max(0, properties.length - itemsPerView)
+    if (currentIndex > maxIndex) setCurrentIndex(maxIndex)
+  }, [itemsPerView])
+
   const nextSlide = () => {
-    setCurrentIndex((prevIndex) => 
-      prevIndex === properties.length - 3 ? 0 : prevIndex + 1
-    )
+    setCurrentIndex((prevIndex) => {
+      const maxIndex = Math.max(0, properties.length - itemsPerView)
+      return prevIndex >= maxIndex ? 0 : prevIndex + 1
+    })
   }
 
   const prevSlide = () => {
-    setCurrentIndex((prevIndex) => 
-      prevIndex === 0 ? properties.length - 3 : prevIndex - 1
-    )
+    setCurrentIndex((prevIndex) => {
+      const maxIndex = Math.max(0, properties.length - itemsPerView)
+      return prevIndex <= 0 ? maxIndex : prevIndex - 1
+    })
   }
 
   return (
@@ -83,12 +108,12 @@ function Registered() {
         <div className="relative overflow-hidden">
           <div 
             className="flex transition-transform duration-500 ease-in-out"
-            style={{ transform: `translateX(-${currentIndex * (100 / 3)}%)` }}
+            style={{ transform: `translateX(-${currentIndex * (100 / itemsPerView)}%)` }}
           >
             {properties.map((property, index) => (
-              <div key={property.id} className="w-1/3 flex-shrink-0 px-4">
+              <div key={property.id} className="px-4 flex-shrink-0 basis-full md:basis-1/2 lg:basis-1/3">
                 <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
-                  <div className="relative h-64">
+                  <div className="relative h-64 md:h-64 lg:h-64">
                     <img 
                       src={property.image} 
                       alt={property.title}

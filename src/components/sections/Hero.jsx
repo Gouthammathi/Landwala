@@ -4,14 +4,14 @@ import resort from '../../assets/resort.png'
 import chines from '../../assets/chinese-city 1.png'
 function Hero() {
   return (
-    <section className="bg-gradient-to-r from-blue-200 via-blue-50 to-white min-h-screen flex items-center px-6 sm:px-8">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center pt-2">
+    <section className="bg-gradient-to-r from-blue-200 via-blue-50 to-white min-h-[calc(100vh-64px)] flex items-start px-6 sm:px-8">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center pt-4">
         <div className='grid'>
           <div className="relative">
-            <h1 className="text-blue-900 mb-6 leading-tight" style={{fontFamily: 'Poppins, sans-serif', fontWeight: '800', fontSize: '48px'}}>
+            <h1 className="text-blue-900 mb-6 leading-tight font-extrabold text-3xl sm:text-4xl lg:text-6xl">
               <span className="relative inline-block">
                 <span className="relative z-10">Helping you find</span>
-                <img src={Vector14} alt="" aria-hidden="true" className="absolute -bottom-3 md:-bottom-4 left-0 w-40 md:w-52 z-0" />
+                <img src={Vector14} alt="" aria-hidden="true" className="absolute -bottom-3 md:-bottom-4 left-0 w-32 sm:w-40 md:w-52 z-0" />
               </span>
               <br />
               the property of
@@ -20,18 +20,18 @@ function Hero() {
             </h1>
             </div>
             <div>
-              <p className="text-lg text-gray-500 mb-8 leading-relaxed" style={{fontFamily: 'Montserrat, sans-serif'}}>
+              <p className="text-base sm:text-lg text-gray-500 mb-8 leading-relaxed">
                 Creating quality urban lifestyles, <br/>building stronger communities.
               </p>
             </div>
         </div>
        
          
-          <div className="relative pt-6 sm:pt-10">
-            <div className="relative h-[22rem] sm:h-96 lg:h-[500px]">
+          <div className="relative pt-4 sm:pt-10">
+            <div className="relative h-80 sm:h-96 lg:h-[500px]">
               {/* Background Image - Urban Properties (Top, Larger) */}
-              <div className=" top-0 -right-4 lg:w-[34rem] h-64 sm:h-72 lg:h-80 rounded-3xl overflow-hidden shadow-2xl z-0 border-4 border-white">
-                <div className="w-full h-full bg-white flex items-center justify-center text-gray-500 font-medium rounded-3xl">
+              <div className="absolute top-0 left-1/2 -translate-x-1/2 w-72 h-44 sm:static sm:translate-x-0 sm:top-0 sm:-right-4 sm:w-[34rem] sm:h-72 lg:h-80 rounded-3xl overflow-hidden shadow-2xl z-0 border-4 border-white">
+                <div className="w-full h-full flex items-center justify-center rounded-3xl">
                 <img 
                   src={chines} 
                   alt="Resort Properties" 
@@ -40,7 +40,7 @@ function Hero() {
                 </div>
               </div>
               {/* Foreground Image - Resort Properties (Bottom, Smaller) */}
-              <div className=" absolute bottom-6 sm:bottom-10 -left-24 sm:-left-32 w-60 sm:w-72 lg:w-80 h-48 sm:h-56 lg:h-64 rounded-3xl overflow-hidden shadow-2xl z-10 border-4 border-white">
+              <div className="absolute bottom-2 left-6 w-60 h-36 sm:bottom-10 sm:-left-32 sm:w-72 lg:w-80 sm:h-56 lg:h-64 rounded-3xl overflow-hidden shadow-2xl z-10 border-4 border-white">
                 <img 
                   src={resort} 
                   alt="Resort Properties" 

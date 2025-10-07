@@ -7,8 +7,8 @@ import Icons from '../../assets/Icons.svg'
 
 function Contact() {
   return (
-    <section className="py-24 px-8 bg-white">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+    <section className="py-24 px-6 sm:px-8 bg-white">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
         <div>
           <h2 className="text-4xl lg:text-5xl font-bold text-black mb-8">
             <span className="relative inline-block align-baseline">
@@ -28,13 +28,13 @@ function Contact() {
                 id="contact-email"
                 type="email"
                 placeholder="Enter your email"
-                className="w-full pr-44 pl-5 py-4 rounded-full border border-gray-200 text-base outline-none focus:border-orange-500 transition-colors duration-300 placeholder:text-gray-400"
+                className="w-full pr-36 sm:pr-44 pl-5 py-4 rounded-full border border-gray-200 text-base outline-none focus:border-orange-500 transition-colors duration-300 placeholder:text-gray-400"
                 required
               />
               {/* Right-aligned button */}
               <button
                 type="submit"
-                className="absolute top-1/2 right-1 -translate-y-1/2 px-6 md:px-7 lg:px-8 py-3 rounded-full bg-blue-900 text-white text-sm md:text-base font-semibold shadow-sm hover:bg-gray-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-900"
+                className="mt-3 w-full sm:w-auto sm:mt-0 sm:absolute sm:top-1/2 sm:right-1 sm:-translate-y-1/2 px-6 md:px-7 lg:px-8 py-3 rounded-full bg-blue-900 text-white text-sm md:text-base font-semibold shadow-sm hover:bg-gray-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-900"
               >
                 Connect with us
               </button>
@@ -44,7 +44,7 @@ function Contact() {
               src={Icons} 
               alt="" 
               aria-hidden="true" 
-              className="absolute -bottom-130 -left-10 w-24 md:w-32 lg:w-40 opacity-100"
+              className="absolute bottom-6 left-0 w-20 sm:w-28 md:w-32 lg:w-40 opacity-60"
             />
           </form>
         </div>
@@ -62,10 +62,10 @@ function Contact() {
               src={Icons} 
               alt="" 
               aria-hidden="true" 
-              className="absolute bottom-8 right-25 w-24 md:w-32 lg:w-40 opacity-100 z-0"
+              className="absolute bottom-6 right-6 w-20 sm:w-28 md:w-32 lg:w-40 opacity-60 z-0"
             />
             <div className="relative h-96 z-10">
-              <div className="absolute top-0 left-0 w-96 h-80 rounded-2xl overflow-hidden">
+              <div className="absolute top-0 left-0 w-72 h-56 sm:w-96 sm:h-80 rounded-2xl overflow-hidden">
                 <img
                   src={ContactPicture}
                   alt="Contact Person"
@@ -76,7 +76,7 @@ function Contact() {
               <img
                 src={UserThumb}
                 alt="Team Member"
-                className="absolute top-56 md:top-64 lg:top-72 left-90 w-28 h-28 object-contain"
+                className="absolute top-60 sm:top-64 lg:top-72 left-48 sm:left-64 lg:left-72 w-24 sm:w-28 h-24 sm:h-28 object-contain"
               />
               {/* Support circle removed as requested */}
             </div>

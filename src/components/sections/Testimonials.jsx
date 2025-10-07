@@ -4,16 +4,16 @@ import peop from '../../assets/peop.png'
 function Testimonials() {
   return (
     <div>
-      <div className="flex justify-between items-center mb-8 px-14">
-          <h2 className="text-4xl lg:text-5xl font-bold">
+      <div className="flex justify-between items-center mb-8 px-6 sm:px-14">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold">
             What <span className="text-orange-500">people</span> are saying
           </h2>
-          <div className="flex gap-4 mt-4">
-            <button className="w-12 h-12 border-2 border-blue-900 bg-transparent rounded-full text-blue-900 text-xl hover:bg-blue-900 hover:text-white transition-all duration-300">←</button>
-            <button className="w-12 h-12 border-2 border-blue-900 bg-transparent rounded-full text-blue-900 text-xl hover:bg-blue-900 hover:text-white transition-all duration-300">→</button>
+          <div className="flex gap-3 mt-4">
+            <button className="w-10 h-10 sm:w-12 sm:h-12 border-2 border-blue-900 bg-transparent rounded-full text-blue-900 text-lg sm:text-xl hover:bg-blue-900 hover:text-white transition-all duration-300">←</button>
+            <button className="w-10 h-10 sm:w-12 sm:h-12 border-2 border-blue-900 bg-transparent rounded-full text-blue-900 text-lg sm:text-xl hover:bg-blue-900 hover:text-white transition-all duration-300">→</button>
           </div>
         </div>
-       <section className="py-24 px-8 text-white relative" style={{
+       <section className="py-20 sm:py-24 px-6 sm:px-8 text-white relative" style={{
          backgroundImage: `url(${peop})`,
          backgroundSize: 'cover',
          backgroundPosition: 'center',
@@ -22,7 +22,7 @@ function Testimonials() {
       
         <div className="max-w-6xl mx-auto relative z-10">
       
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
             <div className="bg-white text-gray-800 p-8 rounded-2xl shadow-2xl">
               <p className="mb-8 leading-relaxed text-gray-500">
                 Lacus vestibulum ultricies mi risus, duis non, volutpat nullam non. Magna congue nisi maecenas elit aliquet eu sed consectetur.

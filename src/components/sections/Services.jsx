@@ -7,27 +7,27 @@ import Icons from '../../assets/Icons.svg'
 
 function Services() {
   return (
-    <section className="pt-12 pb-10 px-8 bg-gradient-to-br from-gray-50 to-gray-100 overflow-hidden relative">
+    <section className="pt-12 pb-10 px-6 sm:px-8 bg-gradient-to-br from-gray-50 to-gray-100 overflow-hidden relative">
       {/* Decorative icons in right corner */}
       <img 
         src={Icons} 
         alt="" 
         aria-hidden="true" 
-        className="absolute top-20 right-0 w-24 md:w-32 lg:w-40 opacity-100 transform scale-x-[-1]"
+        className="absolute top-10 right-2 sm:right-6 w-20 sm:w-28 md:w-32 lg:w-40 opacity-60 transform scale-x-[-1]"
       />
-      <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
         {/* Orange Images */}
         <div className="relative">
-          <div className="relative rounded-3xl p-6 sm:p-8 w-full max-w-[36rem] mx-auto sm:mx-0 h-[28rem] sm:h-[34rem] lg:h-[40rem]" style={{
+          <div className="relative rounded-3xl p-6 sm:p-8 w-full max-w-[36rem] mx-auto sm:mx-0 h-[26rem] sm:h-[32rem] lg:h-[38rem]" style={{
             backgroundImage: `url(${bg})`,
             backgroundSize: '80%',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat'
           }}>
             {/* Three overlapping vertical photo cards arranged diagonally */}
-            <div className="flex relative h-full ">
+            <div className="flex sm:relative items-end justify-center gap-3 h-full">
               {/* Leftmost Card (Foreground) - Woman with glasses */}
-              <div className="absolute top-24 sm:top-28 left-0 ml-4 sm:ml-8 w-28 sm:w-32 md:w-36 h-64 sm:h-72 md:h-80 rounded-2xl overflow-hidden shadow-lg z-30">
+              <div className="relative mt-4 sm:mt-0 w-28 h-56 sm:absolute sm:top-28 sm:left-0 sm:ml-8 sm:w-32 md:w-36 sm:h-64 md:h-72 rounded-2xl overflow-hidden shadow-xl ring-1 ring-black/5 hover:shadow-2xl hover:ring-orange-200 transition-all z-30">
                 <img 
                   src={services1} 
                   alt="Team Member 1"
@@ -35,7 +35,7 @@ function Services() {
                 />
               </div>
               {/* Middle Card - Team meeting around laptop */}
-              <div className="absolute top-6 sm:top-8 left-6 sm:left-8 ml-24 sm:ml-32 md:ml-40 w-28 sm:w-32 md:w-36 h-64 sm:h-72 md:h-80  rounded-2xl overflow-hidden shadow-lg z-20">
+              <div className="relative -mt-4 w-28 h-56 sm:absolute sm:top-6 sm:left-8 sm:ml-32 md:ml-40 sm:w-32 md:w-36 sm:h-64 md:h-72 rounded-2xl overflow-hidden shadow-xl ring-1 ring-black/5 hover:shadow-2xl hover:ring-orange-200 transition-all z-20">
                 <img 
                   src={services2} 
                   alt="Team Meeting"
@@ -43,7 +43,7 @@ function Services() {
                 />
               </div>
               {/* Rightmost Card - Woman with laptop */}
-              <div className="absolute top-24 sm:top-28 left-10 sm:left-16 ml-56 sm:ml-64 md:ml-72 w-28 sm:w-32 md:w-36 h-64 sm:h-72 md:h-80 rounded-2xl overflow-hidden shadow-lg z-10">
+              <div className="relative mt-4 sm:mt-0 w-28 h-56 sm:absolute sm:top-28 sm:left-16 sm:ml-64 md:ml-72 sm:w-32 md:w-36 sm:h-64 md:h-72 rounded-2xl overflow-hidden shadow-xl ring-1 ring-black/5 hover:shadow-2xl hover:ring-orange-200 transition-all z-10">
                 <img 
                   src={services3} 
                   alt="Team Member 2"
