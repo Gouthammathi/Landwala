@@ -1,7 +1,11 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import peop from '../../assets/peop.png'
 
 function Testimonials() {
+  const rowRef = useRef(null)
+  const scrollBy = (amount) => {
+    if (rowRef.current) rowRef.current.scrollBy({ left: amount, behavior: 'smooth' })
+  }
   return (
     <div>
       <div className="flex justify-between items-center mb-8 px-6 sm:px-14">
@@ -9,8 +13,8 @@ function Testimonials() {
             What <span className="text-orange-500">people</span> are saying
           </h2>
           <div className="flex gap-3 mt-4">
-            <button className="w-10 h-10 sm:w-12 sm:h-12 border-2 border-blue-900 bg-transparent rounded-full text-blue-900 text-lg sm:text-xl hover:bg-blue-900 hover:text-white transition-all duration-300">←</button>
-            <button className="w-10 h-10 sm:w-12 sm:h-12 border-2 border-blue-900 bg-transparent rounded-full text-blue-900 text-lg sm:text-xl hover:bg-blue-900 hover:text-white transition-all duration-300">→</button>
+            <button onClick={() => scrollBy(-320)} className="w-10 h-10 sm:w-12 sm:h-12 border-2 border-blue-900 bg-transparent rounded-full text-blue-900 text-lg sm:text-xl hover:bg-blue-900 hover:text-white transition-all duration-300">←</button>
+            <button onClick={() => scrollBy(320)} className="w-10 h-10 sm:w-12 sm:h-12 border-2 border-blue-900 bg-transparent rounded-full text-blue-900 text-lg sm:text-xl hover:bg-blue-900 hover:text-white transition-all duration-300">→</button>
           </div>
         </div>
        <section className="py-20 sm:py-24 px-6 sm:px-8 text-white relative" style={{
@@ -22,7 +26,7 @@ function Testimonials() {
       
         <div className="max-w-6xl mx-auto relative z-10">
 
-          <div className="flex md:grid md:grid-cols-3 gap-6 md:gap-8 overflow-x-auto md:overflow-visible snap-x snap-mandatory pb-2 [-ms-overflow-style:none] [scrollbar-width:none]">
+          <div ref={rowRef} className="flex md:grid md:grid-cols-3 gap-6 md:gap-8 overflow-x-auto md:overflow-visible snap-x snap-mandatory pb-2 [-ms-overflow-style:none] [scrollbar-width:none]">
             <div className="bg-white text-gray-800 p-8 rounded-2xl shadow-2xl min-w-[85%] md:min-w-0 snap-center">
               <p className="mb-8 leading-relaxed text-gray-500">
                 Lacus vestibulum ultricies mi risus, duis non, volutpat nullam non. Magna congue nisi maecenas elit aliquet eu sed consectetur.
