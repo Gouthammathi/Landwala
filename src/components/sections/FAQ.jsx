@@ -36,7 +36,7 @@ function FAQ() {
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16">
         <div className="relative">
           <h2 className="text-4xl lg:text-5xl font-bold text-blue-900 mb-4">
-            Frequently Asked <span className="text-orange-500">Questions</span>
+            Frequently Asked <span className="text-[#EF9E41]">Questions</span>
           </h2>
           {/* Decorative icons under the heading */}
           <img 
@@ -68,7 +68,7 @@ function FAQ() {
                     {item.question}
                   </span>
                   <span
-                    className={`ml-4 text-orange-500 transform transition-transform duration-200 ${
+                    className={`ml-4 text-[#EF9E41] transform transition-transform duration-200 ${
                       isOpen ? 'rotate-180' : 'rotate-0'
                     }`}
                     aria-hidden="true"

@@ -28,7 +28,7 @@ function Contact() {
                 id="contact-email"
                 type="email"
                 placeholder="Enter your email"
-                className="w-full pr-36 sm:pr-44 pl-5 py-4 rounded-full border border-gray-200 text-base outline-none focus:border-orange-500 transition-colors duration-300 placeholder:text-gray-400"
+                className="w-full pr-36 sm:pr-44 pl-5 py-4 rounded-full border border-gray-200 text-base outline-none focus:border-[#EF9E41] transition-colors duration-300 placeholder:text-gray-400"
                 required
               />
               {/* Right-aligned button */}

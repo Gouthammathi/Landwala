@@ -68,7 +68,7 @@ function Header() {
         />
         <div className="text-2xl font-bold -ml-4">
           <span className="text-blue-900">Land</span>
-          <span className="text-orange-500">Wala</span>
+          <span className="text-[#EF9E41]">Wala</span>
         </div>
       </button>
       
@@ -81,13 +81,13 @@ function Header() {
             onClick={(e) => handleNavClick(e, section.id)}
             className={`font-medium text-base transition-all duration-300 relative ${
               activeSection === section.id 
-                ? 'text-orange-500' 
-                : 'text-blue-900 hover:text-orange-500'
+                ? 'text-[#EF9E41]' 
+                : 'text-blue-900 hover:text-[#EF9E41]'
             }`}
           >
             {section.label}
             {activeSection === section.id && (
-              <div className="absolute -bottom-1 left-0 right-0 h-0.5 bg-orange-500 transform scale-x-100 transition-transform duration-300"></div>
+              <div className="absolute -bottom-1 left-0 right-0 h-0.5 bg-[#EF9E41] transform scale-x-100 transition-transform duration-300"></div>
             )}
           </a>
         ))}
@@ -112,7 +112,7 @@ function Header() {
 
       {/* Action Buttons (desktop) */}
       <div className="hidden md:flex gap-4 items-center">
-        <button className="bg-transparent border-none text-blue-900 font-medium text-base px-4 py-2 hover:text-orange-500 transition-colors duration-300">
+        <button className="bg-transparent border-none text-blue-900 font-medium text-base px-4 py-2 hover:text-[#EF9E41] transition-colors duration-300">
           Log In
         </button>
         <button className="bg-white border-2 border-blue-900 text-blue-900 font-medium text-base px-6 py-2 rounded-lg hover:bg-blue-900 hover:text-white transition-all duration-300">
@@ -130,7 +130,7 @@ function Header() {
               href={`#${section.id}`}
               onClick={(e) => handleNavClick(e, section.id)}
               className={`py-2 text-base font-medium rounded-lg px-2 transition-colors ${
-                activeSection === section.id ? 'text-orange-500' : 'text-blue-900 hover:text-orange-500'
+                activeSection === section.id ? 'text-[#EF9E41]' : 'text-blue-900 hover:text-[#EF9E41]'
               }`}
             >
               {section.label}

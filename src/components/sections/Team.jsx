@@ -9,7 +9,7 @@ function Team() {
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
         <div className="order-2 lg:order-1">
           <h2 className="text-4xl lg:text-5xl font-bold text-blue-900 mb-6">
-            The people you can <span className="text-orange-500">trust</span>
+            The people you can <span className="text-[#EF9E41]">trust</span>
           </h2>
           <p className="text-gray-500 mb-10 leading-relaxed max-w-xl">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.

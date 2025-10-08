@@ -7,7 +7,7 @@ function WhyLandwala() {
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
         <div className="relative">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-blue-900 mb-8">
-            Why <span className="text-orange-500">Landwala?</span>
+            Why Land<span className="text-[#EF9E41]">wala?</span>
           </h2>
           {/* Decorative icons under the heading */}
           <img 

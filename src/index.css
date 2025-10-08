@@ -2,7 +2,32 @@
 @import "./styles/poppins.css";
 
 /* Set Poppins as default font family */
+* {
+  font-family: "Poppins", sans-serif;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   overflow-x: hidden; /* prevent horizontal scrolling on mobile */
+  font-size: 0.9rem; /* Reduce base font size by 10% */
+}
+
+/* Ensure all text elements use Poppins */
+h1, h2, h3, h4, h5, h6, p, span, div, a, button, input, textarea, label {
+  font-family: "Poppins", sans-serif !important;
+}
+
+/* Global size reduction classes */
+.text-compact {
+  font-size: 0.9em;
+}
+
+.spacing-compact {
+  padding: 0.9em;
+  margin: 0.9em;
+}
+
+.image-compact {
+  width: 90% !important;
+  height: 90% !important;
 }
